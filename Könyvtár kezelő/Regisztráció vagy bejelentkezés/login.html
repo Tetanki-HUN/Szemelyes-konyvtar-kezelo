@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Offline Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Offline Bootstrap/bootstrap.min.js">
+    <link rel="stylesheet" href="../../Offline Bootstrap/jquery.min.js">
+    <link rel="stylesheet" href="../../Offline Bootstrap/popper.min.js">
     <title>Jelentkezz be!</title>
 </head>
 <body>
-    <form id="login-form">
-        <label for="email">Email cím</label>
-        <input type="text" id="email" placeholder="Ide írd az email címed">
-        <label for="password">Jelszó</label>
-        <input type="password" id="password" placeholder="Ide írd a jelszót címed">
-        <button type="submit">Bejelentkezés</button>
-    </form>
+    <div id="container">
+        <form id="login-form">
+            <div class="pt-3">
+            <label for="email">Email cím</label>
+            </div>
+            <input type="text" id="email" placeholder="Ide írd az email címed" class="login-control">
+            <div class="pt-3">
+            <label for="password">Jelszó</label>
+            </div>
+            <input type="password" id="password" placeholder="Ide írd a jelszót címed" class="login-control">
+            <div class="pt-3">
+            <button type="submit">Jelentkezz be</button>
+            </div>
+        </form>
     <br>
     <br>
     <a href="register.html">Még nincs fiókod? Regisztrálj be itt</a>
